@@ -460,7 +460,45 @@ label {
 	padding-bottom: 1em;
 }
 
+/*Footer*/
 
+footer{
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #202020;
+	color: #EDEFEE;
+	padding: 60px;
+}
+.company-info{
+	width: 30%;
+}
+
+footer .links{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer ul li a {
+	color: #EDEFEE;
+}
+
+
+@media (max-width: 800px) {
+	
+
+	form {
+		width: 80%;
+	}
+
+	.btn {
+		padding: 0.8em;
+	}
+
+
+}
 
 @media(max-width: 650px) {
 	.menu {
@@ -480,6 +518,54 @@ label {
 		justify-content: center;
 	}
 
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+	footer .links{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.company-info{
+		width: 90%;
+	}
+
+
+}
+
+@media(max-width:510px) {
+	.title {
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+	.subtitle {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.desc,
+	.btn {
+		font-size: 12px;
+	}
+
+	.img-wrapper {
+		max-width: 140px;
+	}
+
+	.hero-desc,
+	.restaurant-desc {
+		padding-inline: 0.5em;
+	}
+
+	.restaurant-desc-parent {
+		flex-direction: column-reverse;
+	}
+
+	.restaurant-desc {
+		width: 80%;
+	}
 }
 
 @media(max-width:450px) {

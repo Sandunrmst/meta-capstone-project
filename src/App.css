@@ -404,16 +404,26 @@ label {
 .form-desc {
 	text-align: center;
 	padding: 2em 1em;
+	font-size: 23px;
+	color: #2e2e2e;
 }
 
 .seperate {
-	display: block;
-	margin-top: 1em;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	
+}
+.seperate2 {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	
 }
 
-.seperate-child {
+/* .seperate-child {
 	display: inline-block;
-}
+} */
 
 .guests-occasion {
 	display: flex;
@@ -494,6 +504,109 @@ footer ul li a {
 	justify-content: space-between;
 }
 
+.confirmed-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	padding-block: 2em;
+
+}
+
+.confirmed-title {
+
+	text-align: center;
+}
+
+.confirmed-subtitle {
+	color: #000000;
+	text-align: center;
+	max-width: 600px;
+	width: 50%;
+}
+
+.form-main{
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	padding: 20px;
+	padding-left: 100px;
+}
+
+input[type=text],  input[type=date], input[type=number]{
+	background-color: #fafafa;
+	color: rgb(17, 17, 17);
+	padding: 10px 20px;
+	margin: 8px 0;
+	box-sizing: border-box; 
+	border-radius: 5px;
+	border: 1px solid rgb(231, 231, 231);
+	outline: none;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+	background-color: #D9B506;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: medium;
+  }
+
+  select {
+	/* Reset Select */
+	appearance: none;
+	outline: 10px red;
+	border: 0;
+	box-shadow: none;
+	/* Personalize */
+	flex: 1;
+	padding: 0 1em;
+	color: #2e2e2e;
+	font-size: large;
+
+	background-color:#f5f5f5;
+	background-image: none;
+	cursor: pointer;
+	
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+	display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+	position: relative;
+	display: flex;
+	width: 20em;
+	height: 3em;
+	border-radius: .25em;
+	overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	background-color: #34495e;
+	transition: .25s all ease;
+	pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+	color: #f39c12;
+  }
+
+  .occation{
+	margin-top: 25px;
+  }
 
 @media (max-width: 800px) {
 	

@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
            
             <div className="company-info">
-                <img src={logo} alt=""/>
+                <img src={logo} alt="logo"/>
                 <p>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
             </div>
 

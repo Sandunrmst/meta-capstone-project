@@ -23,11 +23,11 @@ const Nav = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
-            {/* <li><Link to="/">Home</Link></li> */}
+            <li><Link to="/">Home</Link></li>
             <li><a href='/'>About</a></li>
             <li><a href='/'>Services</a></li>
             <li><a href='/'>Menu</a></li>
-            {/* <li><Link to="/booking">Reservations</Link></li> */}
+            <li><Link to="/booking">Reservations</Link></li>
             <li><a href='/'>Order Online</a></li>
             <li><a href='/'>Login</a></li>
           

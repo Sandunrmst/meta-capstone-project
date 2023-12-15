@@ -463,10 +463,12 @@ label {
 /*Footer*/
 
 footer{
-	padding-left: 50px;
-	padding-right: 50px;
+
+	
 	display: flex;
 	justify-content: space-between;
+	padding-left: 50px;
+	padding-right: 50px;
 	background-color: #202020;
 	color: #EDEFEE;
 	padding: 60px;
@@ -483,6 +485,13 @@ footer .links{
 
 footer ul li a {
 	color: #EDEFEE;
+}
+
+.main-align{
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 

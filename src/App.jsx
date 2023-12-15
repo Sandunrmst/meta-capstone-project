@@ -1,24 +1,31 @@
-import React from 'react';
+
 import './App.css';
 import Nav from "./components/Nav"
-import Header from "./components/Header"
-import Menu from './components/Menu';
-import Testimonials from './components/Testimonials';
+import HomePage from './pages/HomePage';
+import BookingPage from './pages/BookingPage';
+import ConfirmedBooking from './pages/ConfirmedBooking';
+import {
+  Route,
+  Routes
+} from "react-router-dom"
 import Footer from './components/Footer';
-
 
 
 function App() {
   return (
  
-    <>
-      <Nav/>
-      <Header/>
-      <Menu/>
-      <Testimonials/>
-      <Footer/>
 
-    </>
+      <div className='main-align'>
+  
+        <Nav/>
+        <Routes> 
+        <Route path="/" exact element={<HomePage />}></Route>
+        <Route path="/booking" element={<BookingPage />}></Route> 
+        <Route path="/confirmed" element={<ConfirmedBooking />}></Route>
+        </Routes>
+        <Footer/>
+    </div>
+
   );
 }
 
